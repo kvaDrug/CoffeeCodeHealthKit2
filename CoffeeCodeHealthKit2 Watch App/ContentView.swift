@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  PermissionView.swift
 //  CoffeeCodeHealthKit2 Watch App
 //
 //  Created by Uladzimir on 9.06.24.
