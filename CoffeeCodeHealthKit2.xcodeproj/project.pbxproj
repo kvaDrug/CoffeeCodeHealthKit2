@@ -19,6 +19,9 @@
 		55072C2B2C15ABB300B3EFC9 /* HealthDataTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55072C292C15ABB300B3EFC9 /* HealthDataTypes.swift */; };
 		55072C2C2C15ABB300B3EFC9 /* HealthPermissionsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55072C2A2C15ABB300B3EFC9 /* HealthPermissionsManager.swift */; };
 		55072C312C15AE2C00B3EFC9 /* HealthPermissionsStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55072C302C15AE2C00B3EFC9 /* HealthPermissionsStatus.swift */; };
+		55072C352C15B03800B3EFC9 /* PersonalDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55072C342C15B03800B3EFC9 /* PersonalDataView.swift */; };
+		55072C382C15B1AE00B3EFC9 /* PersonalDataViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55072C372C15B1AE00B3EFC9 /* PersonalDataViewModel.swift */; };
+		55072C3D2C15B9D000B3EFC9 /* WorkoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55072C3C2C15B9D000B3EFC9 /* WorkoutView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +64,9 @@
 		55072C2E2C15ABDA00B3EFC9 /* CoffeeCodeHealthKit2.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CoffeeCodeHealthKit2.entitlements; sourceTree = "<group>"; };
 		55072C2F2C15AC6E00B3EFC9 /* CoffeeCodeHealthKit2 Watch App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "CoffeeCodeHealthKit2 Watch App.entitlements"; sourceTree = "<group>"; };
 		55072C302C15AE2C00B3EFC9 /* HealthPermissionsStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthPermissionsStatus.swift; sourceTree = "<group>"; };
+		55072C342C15B03800B3EFC9 /* PersonalDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalDataView.swift; sourceTree = "<group>"; };
+		55072C372C15B1AE00B3EFC9 /* PersonalDataViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalDataViewModel.swift; sourceTree = "<group>"; };
+		55072C3C2C15B9D000B3EFC9 /* WorkoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,9 +129,11 @@
 		55072C162C15AB4000B3EFC9 /* CoffeeCodeHealthKit2 Watch App */ = {
 			isa = PBXGroup;
 			children = (
+				55072C362C15B19400B3EFC9 /* ViewModels */,
 				55072C2F2C15AC6E00B3EFC9 /* CoffeeCodeHealthKit2 Watch App.entitlements */,
 				55072C172C15AB4000B3EFC9 /* CoffeeCodeHealthKit2App.swift */,
-				55072C192C15AB4000B3EFC9 /* ContentView.swift */,
+				55072C3B2C15B3F600B3EFC9 /* Model */,
+				55072C332C15B00100B3EFC9 /* Views */,
 				55072C1B2C15AB4100B3EFC9 /* Assets.xcassets */,
 				55072C1D2C15AB4100B3EFC9 /* Preview Content */,
 			);
@@ -156,6 +164,31 @@
 				55072C072C15AB3F00B3EFC9 /* PermissionView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		55072C332C15B00100B3EFC9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				55072C192C15AB4000B3EFC9 /* ContentView.swift */,
+				55072C342C15B03800B3EFC9 /* PersonalDataView.swift */,
+				55072C3C2C15B9D000B3EFC9 /* WorkoutView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		55072C362C15B19400B3EFC9 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				55072C372C15B1AE00B3EFC9 /* PersonalDataViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		55072C3B2C15B3F600B3EFC9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -272,8 +305,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55072C382C15B1AE00B3EFC9 /* PersonalDataViewModel.swift in Sources */,
 				55072C1A2C15AB4000B3EFC9 /* ContentView.swift in Sources */,
 				55072C182C15AB4000B3EFC9 /* CoffeeCodeHealthKit2App.swift in Sources */,
+				55072C3D2C15B9D000B3EFC9 /* WorkoutView.swift in Sources */,
+				55072C352C15B03800B3EFC9 /* PersonalDataView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
